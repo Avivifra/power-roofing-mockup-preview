@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Power Roofing NYC Header and Footer Mockup</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root {
+      --blue: #145da0;
+      --blue-dark: #0d3763;
+      --blue-soft: #eaf3fb;
+      --green: #8ab313;
+      --green-dark: #6e9209;
+      --ink: #18202a;
+      --muted: #637083;
+      --line: #dbe4ec;
+      --white: #fff;
+      --shadow: 0 18px 45px rgba(13, 55, 99, .12);
+      font-family: "Poppins", "Montserrat", "Segoe UI", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #f4f7fa;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 1440px;
+      margin: 0 auto;
+      background: var(--white);
+      min-height: 100vh;
+    }
+
+    .mockup-label {
+      padding: 22px 32px;
+      background: #f7fafc;
+      border-bottom: 1px solid var(--line);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--blue-dark);
+    }
+
+    .trust-strip {
+      background: var(--blue-dark);
+      color: var(--white);
+      font-size: 14px;
+    }
+
+    .trust-strip-inner,
+    .header-inner,
+    .nav-inner,
+    .footer-inner,
+    .footer-bottom-inner {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .trust-strip-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .trust-left,
+    .trust-right,
+    .contact-row,
+    .nav-actions,
+    .badge-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--green);
+      display: inline-block;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .socials a {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.12);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .site-header {
+      background: var(--white);
+      box-shadow: 0 1px 0 var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      min-height: 96px;
+      display: grid;
+      grid-template-columns: 230px 1fr auto;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 206px;
+      height: auto;
+      display: block;
+    }
+
+    .contact-row {
+      justify-content: center;
+    }
+
+    .contact-card {
+      min-width: 190px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfdff;
+    }
+
+    .contact-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 7px;
+      display: grid;
+      place-items: center;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .eyebrow {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .contact-card strong {
+      display: block;
+      margin-top: 2px;
+      font-size: 15px;
+      line-height: 1.25;
+      color: var(--ink);
+    }
+
+    .estimate-btn,
+    .call-btn,
+    .outline-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 46px;
+      padding: 0 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .estimate-btn {
+      background: var(--green);
+      color: var(--white);
+      box-shadow: 0 10px 22px rgba(138, 179, 19, .24);
+    }
+
+    .call-btn {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .outline-btn {
+      border: 1px solid rgba(255,255,255,.45);
+      color: var(--white);
+    }
+
+    .nav-bar {
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .nav-inner {
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 800;
+      color: #253140;
+      font-size: 15px;
+    }
+
+    .nav-links a {
+      padding: 17px 12px;
+      border-radius: 6px;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: var(--green-dark);
+      background: #f6faed;
+    }
+
+    .nav-mini {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .hero-preview {
+      min-height: 430px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(90deg, rgba(13, 55, 99, .88), rgba(13, 55, 99, .46)),
+        url("https://powerroofingnyc.com/wp-content/uploads/2024/08/power-roofing-11.webp") center/cover;
+      color: #fff;
+      padding: 54px 24px;
+    }
+
+    .hero-preview-inner {
+      width: min(1180px, 100%);
+      display: grid;
+      grid-template-columns: minmax(0, 620px) 360px;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      font-weight: 900;
+      letter-spacing: .04em;
+    }
+
+    .stars {
+      color: #ffb537;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 5vw, 70px);
+      line-height: .96;
+      letter-spacing: 0;
+    }
+
+    .hero-preview p {
+      margin: 22px 0 0;
+      max-width: 620px;
+      color: rgba(255,255,255,.9);
+      font-size: 18px;
+      line-height: 1.75;
+      font-weight: 600;
+    }
+
+    .quick-card {
+      background: rgba(255,255,255,.96);
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .quick-card h2 {
+      margin: 0 0 8px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+
+    .quick-card p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+      font-weight: 600;
+    }
+
+    .quick-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .quick-grid .estimate-btn,
+    .quick-grid .call-btn {
+      width: 100%;
+    }
+
+    .mega-preview {
+      padding: 34px 0 44px;
+      background: #f8fbfd;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mega-card {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1.05fr 1.8fr;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+
+    .mega-intro {
+      background: var(--blue);
+      color: #fff;
+      padding: 30px;
+    }
+
+    .mega-intro h2 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 0;
+    }
+
+    .mega-intro p {
+      margin: 12px 0 22px;
+      line-height: 1.65;
+      color: rgba(255,255,255,.86);
+    }
+
+    .mega-columns {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      padding: 30px;
+    }
+
+    .mega-columns h3,
+    .footer-col h3 {
+      margin: 0 0 12px;
+      font-size: 14px;
+      line-height: 1.25;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--blue);
+    }
+
+    .mega-columns a,
+    .footer-col a,
+    .footer-col span {
+      display: block;
+      color: #344154;
+      font-size: 15px;
+      line-height: 1.35;
+      padding: 6px 0;
+      font-weight: 650;
+    }
+
+    .mega-columns a:hover,
+    .footer-col a:hover {
+      color: var(--green-dark);
+    }
+
+    .footer-cta {
+      background: var(--blue-dark);
+      color: #fff;
+      padding: 34px 0;
+    }
+
+    .footer-cta-inner {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .footer-cta h2 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      letter-spacing: 0;
+    }
+
+    .footer-cta p {
+      margin: 0;
+      color: rgba(255,255,255,.78);
+      font-weight: 650;
+    }
+
+    .footer-main {
+      background: #fff;
+      padding: 48px 0 36px;
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1.2fr .72fr .72fr 1fr;
+      gap: 42px;
+    }
+
+    .footer-brand img {
+      width: 210px;
+      height: auto;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-weight: 600;
+      margin: 0 0 18px;
+      max-width: 360px;
+    }
+
+    .badge-row {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 8px 10px;
+      font-size: 12px;
+      font-weight: 900;
+      color: var(--blue-dark);
+      background: #fbfdff;
+    }
+
+    .contact-stack {
+      display: grid;
+      gap: 8px;
+    }
+
+    .contact-stack a,
+    .contact-stack span {
+      padding-left: 0;
+    }
+
+    .footer-bottom {
+      background: #f8fbfd;
+      border-top: 1px solid var(--line);
+      padding: 16px 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .footer-bottom-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .mobile-section {
+      padding: 42px 24px 64px;
+      background: #eef4f8;
+    }
+
+    .mobile-wrap {
+      max-width: 430px;
+      margin: 0 auto;
+      border-radius: 28px;
+      background: #101820;
+      padding: 14px;
+      box-shadow: 0 26px 60px rgba(13,55,99,.2);
+    }
+
+    .mobile-screen {
+      min-height: 820px;
+      border-radius: 20px;
+      overflow: hidden;
+      background: #fff;
+      position: relative;
+    }
+
+    .mobile-trust {
+      background: var(--blue-dark);
+      color: #fff;
+      text-align: center;
+      padding: 9px 16px;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .mobile-head {
+      display: grid;
+      grid-template-columns: 130px 1fr 42px;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mobile-head img {
+      width: 130px;
+      display: block;
+    }
+
+    .mobile-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .mobile-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 900;
+      background: var(--green);
+    }
+
+    .hamb {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .mobile-hero {
+      min-height: 360px;
+      color: #fff;
+      padding: 38px 22px;
+      background:
+        linear-gradient(rgba(13, 55, 99, .82), rgba(13, 55, 99, .68)),
+        url("https://powerroofingnyc.com/wp-content/uploads/2024/08/power-roofing-13.webp") center/cover;
+      text-align: center;
+    }
+
+    .mobile-hero h2 {
+      margin: 14px 0 14px;
+      font-size: 39px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .mobile-hero p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.65;
+      font-weight: 650;
+      color: rgba(255,255,255,.9);
+    }
+
+    .mobile-drawer-preview {
+      padding: 20px;
+      background: #fff;
+    }
+
+    .drawer-title {
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .drawer-link {
+      min-height: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      font-weight: 850;
+    }
+
+    .mobile-bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      box-shadow: 0 -12px 28px rgba(13,55,99,.14);
+    }
+
+    .mobile-bottom a {
+      min-height: 58px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .mobile-bottom a:first-child {
+      background: var(--blue);
+    }
+
+    .mobile-bottom a:last-child {
+      background: var(--green);
+    }
+
+    @media (max-width: 980px) {
+      .trust-strip-inner,
+      .header-inner,
+      .nav-inner,
+      .footer-cta-inner,
+      .footer-inner,
+      .footer-bottom-inner {
+        width: min(100% - 32px, 720px);
+      }
+
+      .desktop-only {
+        display: none;
+      }
+
+      .header-inner {
+        grid-template-columns: 180px 1fr;
+      }
+
+      .logo img {
+        width: 178px;
+      }
+
+      .nav-inner {
+        justify-content: flex-end;
+      }
+
+      .hero-preview-inner,
+      .mega-card,
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .mega-columns {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-cta-inner,
+      .footer-bottom-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .page {
+        background: #eef4f8;
+      }
+
+      .mockup-label,
+      .desktop-mockup {
+        display: none;
+      }
+
+      .mobile-section {
+        padding: 16px;
+      }
+
+      .mobile-wrap {
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .mobile-screen {
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="mockup-label">Recommended desktop header, navigation, and footer direction</div>
+
+    <section class="desktop-mockup">
+      <header class="site-header">
+        <div class="trust-strip">
+          <div class="trust-strip-inner">
+            <div class="trust-left">
+              <span class="trust-pill"><span class="dot"></span> 24/7 Emergency Roof Service</span>
+              <span class="trust-pill">Licensed, Bonded & Insured</span>
+              <span class="trust-pill">NYC LIC #2122433</span>
+            </div>
+            <div class="trust-right">
+              <span class="trust-pill">Serving Brooklyn, Queens & All NYC</span>
+              <div class="socials" aria-label="Social links">
+                <a href="#">f</a>
+                <a href="#">ig</a>
+                <a href="#">yt</a>
+                <a href="#">tt</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-inner">
+          <a class="logo" href="#">
+            <img src="https://powerroofingnyc.com/wp-content/uploads/2026/04/power-roofing-ny-roofing-contractor-logo.webp" alt="Power Roofing NY logo">
+          </a>
+
+          <div class="contact-row desktop-only">
+            <a class="contact-card" href="tel:+17186001133">
+              <span class="contact-icon">☎</span>
+              <span>
+                <span class="eyebrow">Call 24/7</span>
+                <strong>(718) 600-1133</strong>
+              </span>
+            </a>
+            <a class="contact-card" href="mailto:info@powerroofingnyc.com">
+              <span class="contact-icon">@</span>
+              <span>
+                <span class="eyebrow">Email</span>
+                <strong>info@powerroofingnyc.com</strong>
+              </span>
+            </a>
+          </div>
+
+          <a class="estimate-btn" href="#">Free Estimate</a>
+        </div>
+
+        <nav class="nav-bar" aria-label="Primary navigation">
+          <div class="nav-inner">
+            <div class="nav-links">
+              <a class="active" href="#">Home</a>
+              <a href="#">Services</a>
+              <a href="#">Areas We Serve</a>
+              <a href="#">Emergency</a>
+              <a href="#">Projects</a>
+              <a href="#">Reviews</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="nav-mini desktop-only">
+              <span>Mon-Sun 7:00 AM-11:00 PM</span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero-preview">
+        <div class="hero-preview-inner">
+          <div>
+            <div class="rating">Rated <span class="stars">★★★★★</span> on Google, Yelp & BBB</div>
+            <h1>Power Roofing Brooklyn, Queens & All NYC</h1>
+            <p>Licensed roofing contractors for emergency repair, flat roofing, roof replacement, gutters, siding, and skylights across the five boroughs.</p>
+          </div>
+          <aside class="quick-card">
+            <h2>Need roofing help today?</h2>
+            <p>Make the next step obvious without making the header feel crowded.</p>
+            <div class="quick-grid">
+              <a class="call-btn" href="tel:+17186001133">Call Now</a>
+              <a class="estimate-btn" href="#">Request Free Estimate</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="mega-preview">
+        <div class="mega-card">
+          <div class="mega-intro">
+            <h2>Cleaner mega menu</h2>
+            <p>Keep the SEO links crawlable, but organize them around user intent instead of showing hundreds of equal-weight links.</p>
+            <a class="outline-btn" href="#">View All Services</a>
+          </div>
+          <div class="mega-columns">
+            <div>
+              <h3>Roofing</h3>
+              <a href="#">Roof Repair</a>
+              <a href="#">Roof Replacement</a>
+              <a href="#">Roof Installation</a>
+              <a href="#">Roof Inspection</a>
+            </div>
+            <div>
+              <h3>Flat & Commercial</h3>
+              <a href="#">Flat Roof Repair</a>
+              <a href="#">Flat Roof Installation</a>
+              <a href="#">Commercial Roofing</a>
+              <a href="#">Roof Coating</a>
+            </div>
+            <div>
+              <h3>Exterior</h3>
+              <a href="#">Gutter Installation</a>
+              <a href="#">Gutter Repair</a>
+              <a href="#">Siding Installation</a>
+              <a href="#">Skylight Repair</a>
+            </div>
+            <div>
+              <h3>Top Areas</h3>
+              <a href="#">Brooklyn NY</a>
+              <a href="#">Queens NY</a>
+              <a href="#">Manhattan NY</a>
+              <a href="#">Bronx NY</a>
+              <a href="#">Yonkers NY</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-cta">
+        <div class="footer-cta-inner">
+          <div>
+            <h2>Roof repair, replacement & installation across NYC</h2>
+            <p>Licensed, bonded, insured, and available for urgent roofing needs.</p>
+          </div>
+          <div class="nav-actions">
+            <a class="outline-btn" href="tel:+17186001133">Call (718) 600-1133</a>
+            <a class="estimate-btn" href="#">Free Estimate</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-main">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="https://powerroofingnyc.com/wp-content/uploads/2026/04/power-roofing-ny-roofing-contractor-logo.webp" alt="Power Roofing NY logo">
+            <p>Power Roofing NY is a licensed, bonded, and insured roofing contractor serving Brooklyn, Queens, Manhattan, Bronx, Staten Island, Long Island, and Yonkers.</p>
+            <div class="badge-row">
+              <span class="badge">LIC #2122433</span>
+              <span class="badge">Fully Insured</span>
+              <span class="badge">Free Estimates</span>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Roofing Services</h3>
+            <a href="#">Roof Repair</a>
+            <a href="#">Roof Replacement</a>
+            <a href="#">Roof Installation</a>
+            <a href="#">Flat Roof Repair</a>
+            <a href="#">Commercial Roofing</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Areas Served</h3>
+            <a href="#">Brooklyn NY</a>
+            <a href="#">Queens NY</a>
+            <a href="#">Manhattan NY</a>
+            <a href="#">Bronx NY</a>
+            <a href="#">Staten Island NY</a>
+            <a href="#">Yonkers NY</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <div class="contact-stack">
+              <a href="#">1267 E 72nd St, Brooklyn, NY 11234</a>
+              <a href="tel:+17186001133">(718) 600-1133</a>
+              <a href="mailto:info@powerroofingnyc.com">info@powerroofingnyc.com</a>
+              <span>Mon-Sun: 7:00 AM-11:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <span>Copyright 2026 Power Roofing NYC. All rights reserved.</span>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Booking</a>
+            <a href="#">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-section">
+      <div class="mockup-label" style="display:block; max-width:430px; margin:0 auto 18px; border:0; border-radius:8px;">Recommended mobile header and drawer direction</div>
+      <div class="mobile-wrap">
+        <div class="mobile-screen">
+          <div class="mobile-trust">24/7 Emergency Roof Service | LIC #2122433</div>
+          <div class="mobile-head">
+            <img src="https://powerroofingnyc.com/wp-content/uploads/2026/04/power-roofing-ny-roofing-contractor-logo.webp" alt="Power Roofing NY logo">
+            <div class="mobile-actions">
+              <a class="mobile-icon" href="tel:+17186001133">☎</a>
+            </div>
+            <button class="hamb" type="button" aria-label="Open navigation">≡</button>
+          </div>
+          <section class="mobile-hero">
+            <div class="rating">Rated <span class="stars">★★★★★</span></div>
+            <h2>NYC Roofing Contractors</h2>
+            <p>Fast help for roof repair, roof replacement, flat roofing, gutters, siding, and skylights.</p>
+          </section>
+          <section class="mobile-drawer-preview">
+            <div class="drawer-title">Mobile menu preview</div>
+            <a class="drawer-link" href="#">Services <span>+</span></a>
+            <a class="drawer-link" href="#">Areas We Serve <span>+</span></a>
+            <a class="drawer-link" href="#">Emergency Roofing <span>+</span></a>
+            <a class="drawer-link" href="#">Reviews <span>›</span></a>
+            <a class="drawer-link" href="#">About Power Roofing <span>›</span></a>
+            <a class="drawer-link" href="#">Contact <span>›</span></a>
+          </section>
+          <div class="mobile-bottom">
+            <a href="tel:+17186001133">Call Now</a>
+            <a href="#">Free Estimate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
