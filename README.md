@@ -10,3 +10,5 @@ This repository includes only the static preview files needed for review:
 - Supporting static image assets
 
 The preview pages include `noindex, nofollow` meta tags so search engines should not index the mockup content.
+
+Referenced local mockup images are compressed to 100 KB or less. Image SEO fields for WordPress upload are documented in `image-seo-metadata.csv`.
